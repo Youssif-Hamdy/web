@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="store.css">
+  <script defer src="store.js"></script>
+    <title>Store</title>
+    </head>
+    <body>
+
+
+<div class="shipping-message">
+    FREE SHIPPING ON ORDERS $150+ (US DOMESTIC ONLY)
+</div>
+<nav class="navbar">
+    <ul class="nav-links">
+        <li class="search-icon"><a href="#"><i class="fas fa-search"></i></a></li>
+        <li class="user-icon"><a href="login.html"><i class="fas fa-user"></i></a></li>
+        <li class="active"> <a href="tes3t.html"><i class="fa fa-fw fa-home"></i></a></li>
+    </ul>
+    <div class="brand">
+        <i class="fa fa-fw fa-fire" style="font-size: 30px;"></i>
+        <span style="color: orange; font-weight: bold;"><span style="color: #ff8c00;">G</span>  <span style="color: white;">YM ZONE</span>
+      
+    </div>
+</nav>
+
+
+<div class="container">
+    <div class="filter-container">
+        <button id="filterButton">Filter</button>
+        <div class="filter-menu" id="filterMenu">
+            <label for="size">Size:</label>
+            <select id="size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+    
+            <label for="color">Color:</label>
+            <select id="color">
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+            </select>
+    
+            <label for="gender">Gender:</label>
+            <select id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+    </div>
+    
+  
+
+  </div>
+
+
+<div class="products">
+      <!-- Product 1 -->
+  <div class="product">
+      <img src="https://www.gymreapers.com/cdn/shop/files/quick-locking-strength-kit-all-black_1024_800x.jpg?v=1700697057" alt="Product 1" class="product-image">
+      <h3>All Black Training Kit</h3>
+      <p>$19.99</p>
+          <div>
+              <span class="color-option" style="background-color: red;" onclick="changeColor('https://www.gymreapers.com/cdn/shop/files/quick-locking-strength-kit-red-main_800x.jpg?v=1699380191', this)"></span>
+              <span class="color-option" style="background-color: green;" onclick="changeColor('https://www.gymreapers.com/cdn/shop/files/quick-locking-strength-kit-green-main_800x.jpg?v=1699379351', this)"></span>
+              <span class="color-option" style="background-color: rgb(29, 9, 9);" onclick="changeColor('https://www.gymreapers.com/cdn/shop/files/quick-locking-strength-kit-all-black_1024_800x.jpg?v=1700697057', this)"></span>
+              <span class="color-option" style="background-color: black;" onclick="changeColor('https://www.gymreapers.com/cdn/shop/files/quick-locking-strength-kit-mid-night-camo-main_800x.jpg?v=1699379718', this)"></span>
+          </div>
+  </div>
+
+      <!-- Product 2 -->
+  <div class="product">
+      <img src="https://www.gymreapers.com/cdn/shop/files/Quick-Locking-Belt-Black-Black-main.jpg?v=1700665566&width=400" alt="Product 1" class="product-image">
+      <h3>Quick Locking Weightlifting Belt | Premium Back Support - Tan</h3>
+      <p>$30</p>
+          <div>
+              <span class="color-option" style="background-color: red;" onclick="changeColor('https://www.gymreapers.com/cdn/shop/products/quick-locking-belt-red_73c8507f-a84a-4c41-924b-07ae718a0962_800x.jpg?v=1658957034', this)"></span>
+              <span class="color-option" style="background-color: green;" onclick="changeColor('https://www.gymreapers.com/cdn/shop/products/quick-locking-belt-grn_167df793-8d96-46f2-8378-7d1ff0d50d8d_800x.jpg?v=1658956813', this)"></span>
+              <span class="color-option" style="background-color: rgb(227, 227, 227);" onclick="changeColor('https://www.gymreapers.com/cdn/shop/products/quick-locking-belt-sand_12935fd0-ae7c-4580-b507-cc6f1f9bf0f9_800x.jpg?v=1658957053', this)"></span>
+              <span class="color-option" style="background-color: black;" onclick="changeColor('https://www.gymreapers.com/cdn/shop/files/Quick-Locking-Belt-Black-Black-main.jpg?v=1700665566&width=400', this)"></span>
+          </div>
+  </div>
+
+  <!-- Product 3 -->
+  <div class="product">
+      <img src="https://www.gymreapers.com/cdn/shop/files/Gravestone-Duffle-sand-front_800x.jpg?v=1692895821" alt="Product 1" class="product-image">
+      <h3>Gymreapers Gravestone Duffle - Desert Sand</h3>
+      <p>$250</p>
+          <div>
+              <span class="color-option" style="background-color: rgb(178, 178, 178);" onclick="changeColor('https://www.gymreapers.com/cdn/shop/files/Gunmetal-duffle-main_800x.jpg?v=1693263676', this)"></span>
+                <span class="color-option" style="background-color: rgb(219, 219, 125)" onclick="changeColor('https://www.gymreapers.com/cdn/shop/files/Gravestone-Duffle-sand-front_800x.jpg?v=1692895821', this)"></span>
+              <span class="color-option" style="background-color: black;" onclick="changeColor('https://www.gymreapers.com/cdn/shop/files/Onyx_PHO07956_800x.jpg?v=1694125949', this)"></span>
+          </div>
+  </div>
+
+  
+  <!-- Product 4 -->
+  <div class="product">
+      <img src="https://www.gymreapers.com/cdn/shop/products/arm-blast-red_a78555b5-2579-415f-938f-69aab32fab57.jpg?v=1658859501&width=800" alt="Product 1" class="product-image">
+      <h3>GYMREAPERS ARM BLASTER</h3>
+      <p>$60</p>
+      
+          <div>
+              <span class="color-option" style="background-color: rgb(240, 14, 14);" onclick="changeColor('https://www.gymreapers.com/cdn/shop/products/arm-blast-red_a78555b5-2579-415f-938f-69aab32fab57.jpg?v=1658859501&width=800', this)"></span>
+              <span class="color-option" style="background-color: black;" onclick="changeColor('https://www.gymreapers.com/cdn/shop/products/Arm-Blaster-Black_b9f84836-172e-4af0-a442-fc47f3585657.jpg?v=1614099640&width=800', this)"></span>
+          </div>
+  </div>
+<div class="product">
+        <img src="https://www.gymreapers.com/cdn/shop/products/performance-1-4-zip-steel-front_800x.jpg?v=1677539944" alt="Product 1" class="product-image">
+        <h3>Performance Quarter Zip</h3>
+        <p>$90</p>
+        
+            <div>
+                <div>
+                    <span class="color-option" style="background-color: rgb(4, 71, 19);" onclick="changeColor('https://www.gymreapers.com/cdn/shop/products/performance-1-4-zip-green-front_800x.jpg?v=1677539750', this)"></span>
+                    <span class="color-option" style="background-color: rgb(139, 137, 137);" onclick="changeColor('https://www.gymreapers.com/cdn/shop/products/performance-1-4-zip-steel-front_800x.jpg?v=1677539944', this)"></span>
+                    <span class="color-option" style="background-color: rgb(12, 6, 100);" onclick="changeColor('https://www.gymreapers.com/cdn/shop/products/performance-1-4-zip-navy-detail.jpg?v=1677859424&width=400', this)"></span>
+
+
+                </div>
+
+
+            </div>
+    </div>
+
+    <div class="product">
+        <img src="https://www.gymreapers.com/cdn/shop/products/performance-tank-obsidian-side_800x.jpg?v=1677860069" alt="Product 1" class="product-image">
+        <h3>Performance Tank Top - Obsidian</h3>
+        <p>$50</p>
+        
+            <div>
+                <span class="color-option" style="background-color: rgb(6, 91, 3);" onclick="changeColor('https://www.gymreapers.com/cdn/shop/products/scoop-tank-green.jpg?v=1668622864&width=400', this)"></span>
+                <span class="color-option" style="background-color: rgb(139, 137, 137);" onclick="changeColor('https://www.gymreapers.com/cdn/shop/products/performance-tank-obsidian-side_800x.jpg?v=1677860069', this)"></span>
+                <span class="color-option" style="background-color: rgb(12, 6, 100);" onclick="changeColor('https://www.gymreapers.com/cdn/shop/products/performance-1-4-zip-navy-detail.jpg?v=1677859424&width=400', this)"></span>
+
+
+            </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="card-container">
+    <div class="card">
+        <i class="fas fa-headset"></i>
+        <h2>CUSTOMER SERVICE</h2>
+        <p>Available M-F, 8:30am to 4:30pm (MST)</p>
+        <p>(208) 203-7498 | Live Chat</p>
+    </div>
+    
+    <div class="card">
+        <i class="fas fa-shipping-fast"></i>
+        <h2>FREE SHIPPING ON ORDERS $150+</h2>
+        <p>Free US Domestic Shipping when you spend $150 or more!</p>
+    </div>
+    
+    <div class="card">
+        <i class="fas fa-undo"></i>
+        <h2>EASY RETURNS</h2>
+        <p>Buy with confidence and enjoy painless, hassle-free returns!</p>
+    </div>
+    
+    <div class="card">
+        <i class="fas fa-lock"></i>
+        <h2>SECURE PAYMENT</h2>
+        <p>Shop safely and securely knowing your experience is protected.</p>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+     <div class="row">
+       <div class="footer-col">
+         <h4>company</h4>
+         <ul>
+           <li><a href="#">about us</a></li>
+           <li><a href="#">our services</a></li>
+           <li><a href="#">privacy policy</a></li>
+           <li><a href="#">affiliate program</a></li>
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>get help</h4>
+         <ul>
+           <li><a href="#">FAQ</a></li>
+           <li><a href="#">shipping</a></li>
+           <li><a href="#">returns</a></li>
+           <li><a href="#">order status</a></li>
+           <li><a href="#">payment options</a></li>
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>online shop</h4>
+         <ul>
+           <li><a href="#">watch</a></li>
+           <li><a href="#">bag</a></li>
+           <li><a href="#">shoes</a></li>
+           <li><a href="#">dress</a></li>
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>follow us</h4>
+         <div class="social-links">
+           <a href="#"><i class="fab fa-facebook-f"></i></a>
+           <a href="#"><i class="fab fa-twitter"></i></a>
+           <a href="#"><i class="fab fa-instagram"></i></a>
+           <a href="#"><i class="fab fa-linkedin-in"></i></a>
+         </div>
+       </div>
+       <div class="footer-col">
+        <h4>Subscribe</h4>
+        <form action="#" method="post">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+     </div>
+     <div class="gym-logo">
+        <span class="g">G</span>
+        <span class="ym">ym</span>
+        <span class="zone">Zone</span>
+    </div>
+    </div>
+ </footer>
+
+
+
+ 
+   
+
+</body>
+</html>
+
+</html>
