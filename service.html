@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="service.css">
+    <script defer src="service.js"></script>
+    <title>Our Gym</title>
+</head>
+
+<body>
+
+    
+    <header class="hero">
+        <div class="header-container">
+            <div class="logo">
+                <h1>Our Gym services</h1>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#signup">Select service</a></li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="hero-content">
+            <h1>Welcome to Our Gym</h1>
+            <p>Your Journey to a Healthier You Starts Here</p>
+        </div>
+    </header>
+
+    <section id="services" class="services-container">
+        
+        <div class="service" id="service1">
+            <div class="service-background" style="background-image: url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVzb25hbCUyMHRyYWluaW5nJTIwZ3ltfGVufDB8fDB8fHww');"></div>
+            <div class="service-content">
+                <h2>Personal Training</h2>
+                <p>Our experienced trainers are dedicated to helping you achieve your fitness goals. Personalized training programs tailored just for you.</p>
+            </div>
+        </div>
+
+        
+        <div class="service" id="service2">
+            <div class="service-background" style="background-image: url('https://images.unsplash.com/photo-1602827114685-efbb2717da9f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+            <div class="service-content">
+                <h2>Group Classes</h2>
+                <p>Join our group classes for a fun and motivating workout experience. From high-intensity cardio to relaxing yoga sessions, we have it all.</p>
+            </div>
+        </div>
+
+        
+        <div class="service" id="service3">
+            <div class="service-background" style="background-image: url('https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+            <div class="service-content">
+                <h2>Fitness</h2>
+                <p>Fitness is more than just a physical activity; it's a holistic journey towards well-being. Engaging in regular exercise not only strengthens the body but also enhances mental clarity and emotional resilience.</p>
+            </div>
+        </div>
+
+    
+        <div class="service" id="service4">
+            <div class="service-background" style="background-image: url('https://images.unsplash.com/photo-1622599511051-16f55a1234d0?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJveGluZ3xlbnwwfHwwfHx8MA%3D%3D');"></div>
+            <div class="service-content">
+                <h2>Boxing</h2>
+                <p>Boxing is a dynamic and physically demanding combat sport that involves two individuals engaging in a regulated match. Participants, known as boxers, use a combination of strategic movements, defensive tactics, and powerful punches to score points or achieve a knockout victory.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="signup" class="signup">
+        <div class="signup-content">
+            <h2>Choose Your Service</h2>
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="serviceName">Select a Service:</label>
+                    <select id="serviceName" name="serviceName">
+                        <option value="personalTraining">Personal Training</option>
+                        <option value="groupClasses">Group Classes</option>
+                        <option value="Fitness">Fitness</option>
+                        <option value="Boxing">Boxing</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <button type="submit">Subscription and payment</button>
+                <p id="validationMessage"></p>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Our Gym. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
